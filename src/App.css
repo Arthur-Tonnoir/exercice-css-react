@@ -3,18 +3,18 @@
 }
 .main-app{
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 300px);
     grid-template-rows: 180px;
 }
 
 .main-app-one{
-    grid-column: 1 / 1;
+    grid-column: 1;
     grid-row: 1;
 }
 
 .child-app{
     display: grid;
-    grid-template-columns: repeat(2, 600px);
+    grid-template-columns: 300px 600px;
     grid-template-rows: repeat(1, 1fr);
 
 }
@@ -23,9 +23,8 @@
     grid-column: 1 ;
     grid-row: 1;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);;
+    grid-template-columns: repeat(1, 300px);;
     grid-template-rows: repeat(1, 1fr);
-    width: 360px;
     background-color: var(--blue);
     
 }
