@@ -1,0 +1,45 @@
+.main-photo{
+    display: flex;
+    flex-direction: row;
+}
+.containers{
+    display: flex;
+    flex-direction: row;
+    width: 345px;
+}
+
+.container-bleu{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    height: 150px;
+    width: 110px;
+    background-color: rgb(0, 176, 240);
+    border-right: none;
+    
+}
+
+.container-blanc{
+    align-items: center;
+    padding: 10px;
+    height: 130px;
+    width: 90px;
+    border-radius: 35px;
+    background-color: whitesmoke;
+}
+
+.identite-container{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    background-color: var(--gris-clair-2);
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    margin: 20px 0;
+    right: 20px;
+    width: 190px;
+    height: 130px;
+}
