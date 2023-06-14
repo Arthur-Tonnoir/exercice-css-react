@@ -7,10 +7,6 @@
 
 }
 
-.adresse, .email, .numero, .linkedin, .github{
-    border-bottom: 4px solid var(--separator);
-}
-
 .block-title, .adresse, .email, .numero, .linkedin, .github{
     grid-column: 1;
     
