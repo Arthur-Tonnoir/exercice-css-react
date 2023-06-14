@@ -11,7 +11,7 @@
 
 .child-app{
     display: grid;
-    grid-template-columns: 300px 600px;
+    grid-template-columns: 300px 700px;
     grid-template-rows: repeat(1, 1fr);
 
 }
