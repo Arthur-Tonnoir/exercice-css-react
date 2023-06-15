@@ -2,7 +2,7 @@
     grid-column: 1;
     grid-row: 1;
     display: grid;
-    grid-template-columns: repeat(1, 300px);
+    grid-template-columns: repeat(1, 268px);
     grid-template-rows: 80px 130px 130px 130px 130px 130px ;
 
 }
@@ -62,7 +62,7 @@
     grid-row: 2;
     grid-column: 1;
     display: grid;
-    grid-template-columns: repeat(1, 300px);
+    grid-template-columns: repeat(1, 268px);
     grid-template-rows: 80px 50px 50px 50px ;
     background-color: white;
 }
