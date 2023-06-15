@@ -1,7 +1,15 @@
-.main-app{
+#root{
     display: grid;
-    grid-template-columns: repeat(1, 300px);
-    grid-template-rows: 180px;
+    grid-template-columns: repeat(1, 970px);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.main-app{
+    grid-column: 1;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(1, 970px);
+    grid-template-rows: 270px 970px;
 }
 
 .main-app-one{
@@ -10,8 +18,9 @@
 }
 
 .child-app{
+    grid-row: 2;
     display: grid;
-    grid-template-columns: 300px 700px;
+    grid-template-columns: 268px  700px;
     grid-template-rows: repeat(1, 1fr);
 
 }
@@ -20,7 +29,7 @@
     grid-column: 1 ;
     grid-row: 1;
     display: grid;
-    grid-template-columns: repeat(1, 300px);
+    grid-template-columns: repeat(1, 268px);
     grid-template-rows: repeat(1, 1fr);
     background-color: var(--blue);
     
