@@ -1,44 +1,62 @@
 .main-photo{
     display: flex;
-    flex-direction: row;
-}
-.containers{
-    display: flex;
-    flex-direction: row;
-    width: 345px;
+    align-items: center;
+    
 }
 
 .container-bleu{
     display: flex;
     flex-direction: row;
-    padding: 10px;
-    width: 110px;
+    align-items: center;
+    height: 100%;
+    width: 268px;
     background-color: var(--blue);
-    border-right: none;
     
 }
 
 .container-blanc{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 10px;
-    height: 130px;
-    width: 90px;
-    border-radius: 35px;
+    position: relative;
+    color: black;
+    width: 228px;
+    height: 228px;
+    border-radius: 50%;
     background-color: whitesmoke;
+    right: 134px;
 }
 
 .identite-container{
     display: flex;
-    position: relative;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     color: whitesmoke;
+    position: relative;
     background-color: var(--gris-clair-2);
     border-top-right-radius: 35px;
     border-bottom-right-radius: 35px;
-    margin: 20px 0;
-    right: 20px;
-    width: 190px;
-    height: 130px;
+    height: 134px;
+    width: 460px;
+    left: 160px;
+}
+
+.block-identite{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 120px;
+    height: 148px;
+    width: 212px;
+
+}
+
+.identite{
+    font-size: 24px;
+}
+
+.job{
+    font-size: 18px;
+    height: 100%;
 }

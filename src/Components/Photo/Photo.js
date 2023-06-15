@@ -5,19 +5,21 @@ import '../../style.css';
 
 function Photo(){
     return (
-        <div className='main-photo'>
-            <div className='containers'>
+            <div className='main-photo'>
                 <div className='container-bleu'>
-                    <div className='container-blanc'>
-                        <img className='yellow' src='' alt='photo'/>
+                    <div className='identite-container'>
+                        <div className='container-blanc'>
+                        <img src='' alt="photo"/>
+                        </div>
+                        <div className='block-identite'>
+                        <div className='identite'><h4>Arthur TONNOIR</h4></div>
+                        <div className='job'>Développeur Back-End</div>
+                        </div>
                     </div>
                 </div>
-                <div className='identite-container'>
-                    <div className='identite'><h4>Arthur TONNOIR</h4></div>
-                    <div className='job'>Développeur Back-End</div>
-                </div>
+                
+                
             </div>
-        </div>
     );
 }
 
