@@ -1,4 +1,5 @@
 import React from 'react';
+import Getdata from '../../Data';
 import './GridRight.css';
 import '../../style.css';
 
@@ -6,36 +7,9 @@ import '../../style.css';
 
 
 function GridRight() {
-  const [experiences, setExperiences] = React.useState(null);
-  const [educations, setEductions] = React.useState(null);
-  React.useEffect(() => {
-    fetch("/experiences")
-      .then((res) => {
-        if(res.ok){
-          return res.json();
-        }
-        else
-        {
-          throw new Error("Erreur de api backend")
-        }
-      })
-      .then((experience) => setExperiences(experience))
-      .catch((error) => console.error("Erreur lors de la récuperation des données", error))
-  }, []);
-  React.useEffect(() => {
-    fetch("/eductions")
-      .then((res) => {
-        if(res.ok){
-          return res.json();
-        }
-        else
-        {
-          throw new Error("Erreur de api backend")
-        }
-      })
-      .then((education) => setEductions(education))
-      .catch((error) => console.error("Erreur lors de la récuperation des données", error))
-    }, []);
+  const experiences = Getdata("experiences")
+  const educations = Getdata("eductions");
+  
   return (
     <div className='grid-right'>
       <div className='experiences'>
