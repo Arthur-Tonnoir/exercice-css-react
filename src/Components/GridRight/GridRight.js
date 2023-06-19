@@ -1,4 +1,5 @@
 import React from 'react';
+import Getdata from '../../Data';
 import './GridRight.css';
 import '../../style.css';
 
@@ -6,6 +7,9 @@ import '../../style.css';
 
 
 function GridRight() {
+  const experiences = Getdata("experiences")
+  const educations = Getdata("eductions");
+  
   return (
     <div className='grid-right'>
       <div className='experiences'>
@@ -42,27 +46,24 @@ function GridRight() {
           <div className='ligne'></div>
           <div className='block'>
             <div className='title-right'>
-              <h2>The-ring.io</h2>
+              <h2>{!experiences ? "Erreur " : experiences[0]["name"]}</h2>
             </div>
-            <div className='date'><p>Stage–04/01 au 17/02/2021</p></div>
-            <div className='description'><p>Conception de site, Formation conception de site Web</p></div>
+            <div className='date'><p>{!experiences ? "Erreur " : experiences[0]["date"]}</p></div>
+            <div className='description'><p>{!experiences ? "Erreur " : experiences[0]["description"]}</p></div>
           </div>
           <div className='block'>
             <div className='title-right'>
-              <h2>Lycée Henri Senez</h2>
+              <h2>{!experiences ? "Erreur " : experiences[1]["name"]}</h2>
             </div>
-            <div className='date'><p>Stage–14/01 au 08/02/2019</p></div>
-            <div className='description'><p>Dépannage des professeurs et inventaire du matériels 
-informatique et vidéo.</p></div>
+            <div className='date'><p>{!experiences ? "Erreur " : experiences[1]["date"]}</p></div>
+            <div className='description'><p>{!experiences ? "Erreur " : experiences[1]["description"]}</p></div>
           </div>
           <div className='block'>
             <div className='title-right'>
-              <h2>Communauté d’Agglomération Hénin Carvin</h2>
+              <h2>{!experiences ? "Erreur " : experiences[2]["name"]}</h2>
             </div>
-            <div className='date'><p>Stage–24/09 au 19/10/2018 et 12/03 au 06/04/2018</p></div>
-            <div className='description'><p>Dépannage dans les différents services, observation de
-l’installation de la fibre optique. Formatage et réinstallations
-d’ordinateurs. Dépannage des médiathèques du Pas-de-Calais</p></div>
+            <div className='date'><p>{!experiences ? "Erreur " : experiences[2]["date"]}</p></div>
+            <div className='description'><p>{!experiences ? "Erreur " : experiences[2]["description"]}</p></div>
           </div>
         </div>
         <div className='education'>
@@ -72,26 +73,24 @@ d’ordinateurs. Dépannage des médiathèques du Pas-de-Calais</p></div>
           <div className='ligne'></div>
           <div className='block'>
             <div className='title-right'>
-              <h2>Formation Développeur Java/JEE IB-Formation Cegos</h2>
+              <h2>{!educations ? "Erreur " : educations[0]["name"]}</h2>
             </div>
-            <div className='date'><p>Stage–25/04 au 19/07/2022</p></div>
-            <div className='description'><p>Formation Java, Spring, JS, HTML/CSS, Angular, TypeScript … </p></div>
+            <div className='date'><p>{!educations ? "Erreur " : educations[0]["date"]}</p></div>
+            <div className='description'><p>{!educations ? "Erreur " : educations[0]["description"]}</p></div>
           </div>
           <div className='block'>
             <div className='title-right'>
-              <h2>Lycée Gaston Berger Lille</h2>
+              <h2>{!educations ? "Erreur " : educations[1]["name"]}</h2>
             </div>
-            <div className='date'><p>BTS Système Informatique aux 
-Organisations option SLAM (2019-2021)</p></div>
-            <div className='description'><p>Produire et fournir un ensemble de solutions et/ou de services 
-informatiques.</p></div>
+            <div className='date'><p>{!educations ? "Erreur " : educations[1]["date"]}</p></div>
+            <div className='description'><p>{!educations ? "Erreur " : educations[1]["description"]}</p></div>
           </div>
           <div className='block'>
             <div className='title-right'>
-              <h2>Lycée Robespierre – Lens</h2>
+              <h2>{!educations ? "Erreur " : educations[2]["name"]}</h2>
             </div>
-            <div className='date'><p>Bac Système Numérique (2016-2019)</p></div>
-            <div className='description'><p>Les équipements et les installations exploités et organisés avec mention.</p></div>
+            <div className='date'><p>{!educations ? "Erreur " : educations[2]["date"]}</p></div>
+            <div className='description'><p>{!educations ? "Erreur " : educations[2]["description"]}</p></div>
           </div>
         </div>
       </div>
