@@ -3,11 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {Helmet, HelmetProvider} from "react-helmet-async";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <HelmetProvider>
+    <Helmet>
+      <title>CV Arthur TONNOIR 2024-2025</title>
+    </Helmet>
     <App />
+    </HelmetProvider>
   </React.StrictMode>
 );
 

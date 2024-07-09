@@ -26,6 +26,9 @@ function GridLeft(){
             </div>
             <div className='text'><p>06.42.20.40.98</p></div>
           </div>
+          <div className='rqth'>
+            <div className='text'><p>RQTH</p></div>
+          </div>
           <div className='linkedin'>
             <div className='image'>
               <img width="48" height="48" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin"/> 
