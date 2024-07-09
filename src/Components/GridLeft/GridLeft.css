@@ -3,20 +3,20 @@
     grid-row: 1;
     display: grid;
     grid-template-columns: repeat(1, 268px);
-    grid-template-rows: 80px 130px 130px 130px 130px 130px ;
+    grid-template-rows: 80px 130px 130px 130px 80px 130px 130px ;
 
 }
 
-.adresse, .email, .numero, .linkedin, .github{
+.adresse, .email, .numero, .rqth, .linkedin, .github{
     border-bottom: 4px solid var(--separator);
 }
 
-.block-title, .adresse, .email, .numero, .linkedin, .github{
+.block-title, .adresse, .email, .numero, .rqth, .linkedin, .github{
     grid-column: 1;
     
 }
 
-.adresse, .email, .numero, .linkedin, .github{
+.adresse, .email, .numero, .rqth, .linkedin, .github{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,6 +30,7 @@
 
 .block-title{
     display: flex;
+    height: 60px;
     justify-content: center;
     color: white;
     background-color: var(--gris-clair);
@@ -48,12 +49,16 @@
     grid-row: 4;
 }
 
-.linkedin{
+.rqth{
     grid-row: 5;
 }
 
-.github{
+.linkedin{
     grid-row: 6;
+}
+
+.github{
+    grid-row: 7;
     border: none;
 }
 
