@@ -15,7 +15,7 @@ function Getdata(valeur){
         })
         .then((val) => setData(val))
         .catch((error) => console.error("Erreur lors de la récuperation des données", error));
-    }, []);
+    }, [valeur]);
     return data;
 }
 
