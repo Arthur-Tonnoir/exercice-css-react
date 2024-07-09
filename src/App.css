@@ -8,7 +8,7 @@
     grid-column: 1;
     grid-row: 1;
     display: grid;
-    grid-template-columns: repeat(1, 970px);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 270px 970px;
 }
 
@@ -20,7 +20,7 @@
 .child-app{
     grid-row: 2;
     display: grid;
-    grid-template-columns: 268px  700px;
+    grid-template-columns: 268px  1fr;
     grid-template-rows: repeat(1, 1fr);
 
 }
