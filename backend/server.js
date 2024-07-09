@@ -33,6 +33,16 @@ app.get("/eductions", (req, res) => {
     (
         [
             {
+                name: "Formation MS Motion Designer/Game Designer SOFIP",
+                date: "10/06 au 20/09/2024",
+                description: "Formation Unity 3D, Blender"
+            },
+            {
+                name: "Formation Titre Professionnel Concepteur Développeur d'Application SOFIP",
+                date: "02/05 au 04/12/2023",
+                description: "Formation JS, HTML/CSS, SQL, React, TypeScript…"
+            },
+            {
                 name: "Formation Développeur Java/JEE IB-Formation Cegos",
                 date: "Stage–25/04 au 19/07/2022",
                 description: "Formation Java, Spring, JS, HTML/CSS, Angular, TypeScript…"

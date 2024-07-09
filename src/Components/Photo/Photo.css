@@ -42,6 +42,11 @@
     left: 160px;
 }
 
+.identite-container img{
+    border-radius: 50px;
+    height: 50%;
+}
+
 .block-identite{
     display: flex;
     flex-direction: column;
